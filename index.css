@@ -1,0 +1,56 @@
+/* Estilo da calculadora */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E68C; /* Cor mostarda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 2px solid #778A5E; /* Cor sálvia */
+    border-radius: 10px;
+    background-color: #778A5E; /* Cor sálvia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.display input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    background: transparent;
+    color: #F0E68C; /* Cor mostarda */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #F0E68C; /* Cor mostarda */
+    color: #778A5E; /* Cor sálvia */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E6D397; /* Cor mostarda mais clara */
+}
+
+/* Estilo para o botão de igual (=) */
+#equal {
+    grid-column: span 4;
+}
